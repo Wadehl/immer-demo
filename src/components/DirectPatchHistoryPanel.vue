@@ -132,14 +132,14 @@
           </div>
         </div>
         
-        <div class="current-index-indicator">
+        <!-- <div class="current-index-indicator">
           <h3>当前位置指示器:</h3>
           <div class="index-display">
             <span class="index-label">Current Index:</span>
             <span class="index-value">{{ patchHistory.currentIndex }}</span>
             <span class="index-info">({{ patchHistory.currentIndex === -1 ? 'Initial State' : `Step ${patchHistory.currentIndex + 1}` }})</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

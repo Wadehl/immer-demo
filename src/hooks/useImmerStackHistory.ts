@@ -30,7 +30,9 @@ export const useImmerStackHistory = <T>(
 ) => {
   const { maxHistorySize = 50 } = options || {}
  
-  // 历史状态管理
+  // 历史状态管理 - 使用shallowRef
+  // 说明：这里使用shallowRef因为需要完整替换整个历史对象
+  // 与Immer结合时，通过produceWithPatches获得完整的新状态
   const history = shallowRef<StackHistoryState<T>>({
     past: [],
     present: baseState,
